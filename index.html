@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: #f7dbcaed; font-family:monospace;">
+    <header style="text-align: center;">
+        <h1 style="color: #2a55e5;font-family: system-ui;">Tic-Tac-Toe</h1>
+        <div id="players">
+            <input type="text" name="playerOne" id="player1"><label for="playerOne"> :plays as X</label><br>
+            <span>and</span><br>
+            <input type="text" name="playerTwo" id="player2"><label for="playerTwo"> :plays as O</label>
+        </div>
+    </header><br>
+    <div class="flex">
+        <button onclick="initialize()" class="btnColor" id="state">Begin</button>
+        <p><span id="textColor" style="font-size:28px;"></span> <span id="playerTurn"></span></p>
+        <div class="gameBoard">
+            <button classIndex="0" class="gameTiles" type="button"></button>
+            <button classIndex="1" class="gameTiles" type="button"></button>
+            <button classIndex="2" class="gameTiles" type="button"></button>
+            <button classIndex="3" class="gameTiles" type="button"></button>
+            <button classIndex="4" class="gameTiles" type="button"></button>
+            <button classIndex="5" class="gameTiles" type="button"></button>
+            <button classIndex="6" class="gameTiles" type="button"></button>
+            <button classIndex="7" class="gameTiles" type="button"></button>
+            <button classIndex="8" class="gameTiles"    type="button"></button>
+        </div><br>
+        <button id="restartBtn" class="btnColor" style="width:fit-content;height:30px">Restart</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

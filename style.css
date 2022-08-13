@@ -1,0 +1,49 @@
+header{
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBoard{
+    width: 210px;
+    height: 210px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 70px);
+}
+.gameBoard button{
+    font-size: 2rem;
+    font-family:cursive;
+}
+
+.flex p{
+    font-size: larger;
+    font-family: 'Trebuchet MS';
+}
+.flex button{
+    cursor: pointer;
+}
+
+.btnColor{
+    background: rgb(56, 226, 220);
+    width: 100px;
+    height: 40px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.btnColor:hover{
+    background: #11ad11;
+    color: #fff;
+}
+/* UTILITY CLASS */
+.textRed{
+    color: #ff0000ed;
+}
+.textYellow{
+    color: #8400ff;
+}
