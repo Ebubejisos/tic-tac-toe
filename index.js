@@ -1,4 +1,5 @@
 let gameTiles = document.querySelectorAll('.gameTiles');
+let startBtn = document.getElementById('state');
 let restartBtn = document.getElementById('restartBtn');
 let gameText = document.getElementById('playerTurn');
 const playerNameInput = document.getElementById('players');
@@ -26,6 +27,7 @@ function initialize(){
         return;
     }
     playerNameInput.style.display = 'none';
+    startBtn.style.display = 'none';
     running = true;
     textColor.setAttribute("class","textRed");
     textColor.innerText = `${player1}'s`;
